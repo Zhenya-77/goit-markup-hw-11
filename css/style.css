@@ -98,7 +98,7 @@ font-weight: 400;
 }
 
 
-.section-first-page {
+.container {
 
         
 
@@ -258,8 +258,8 @@ font-weight: 400;
 
 }
 
-.section-fourth-box {
-    background-color: #1b414b;
+.container {
+    
 }
 
 .section-fourth-list {}
