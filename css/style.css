@@ -22,7 +22,14 @@ button {
 /* #region Header*/
 
 .header-page {
-
+border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    max-width: 1240px;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 155px;
+    background-color: #fbfbfb;
 }
 
 
@@ -99,8 +106,14 @@ font-weight: 400;
 
 
 .container {
+max-width: 1001px;
+     margin-right: auto;   
+margin-left: auto;
+margin-top: 0px;
+margin-bottom: 180px;
 
-        
+
+
 
 }
 
@@ -141,7 +154,17 @@ font-weight: 300;
 /* #region Section-second */
 
 .section-second {
+
+}
+
+.section-second .container {
+max-width: 1340px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+margin-bottom: 150px;
 background-color: #fbfbfb;
+
 }
 
 .section-second-title {
@@ -180,7 +203,15 @@ font-weight: 400;
 
 /* #region Section-third */
 
-.section-third {}
+.section-third .container {
+width: 1240px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+margin-bottom: 252px;
+display: block;
+
+}
 
 .section-third-title {
     font-weight: 500;
@@ -189,12 +220,18 @@ font-weight: 400;
         letter-spacing: -0.02em;
         text-align: center;
         color: #fbfbfb;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 75px;
+        width: 714px;
 }
 
 .section-third-box {}
 
 .section-third-box-item {
     background-color: #fbfbfb;
+    width: 392px;
 }
 
 .section-third-h3-p {}
@@ -246,6 +283,7 @@ font-weight: 400;
         line-height: 1.1;
         letter-spacing: -0.02em;
         color: #fbfbfb;
+        
 }
 
 /* #endregion */
@@ -254,12 +292,14 @@ font-weight: 400;
 /* #region Section-fourth */
 
 
-.section-fourth {
+.section-fourth .container {
+width: 1340px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+margin-bottom: 150px;
 
-}
 
-.container {
-    
 }
 
 .section-fourth-list {}
@@ -289,9 +329,41 @@ font-weight: 400;
 /* #endregion  */
 
 
+/* #region Section-fifth */
+
+.section-fifth .container {
+    width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+}
+
+.contact-form {}
+
+.form-group {}
+
+
+/* #endregion  */
+
 /* #region Section-six */
 
-.section-six {}
+.section-six .container {
+width: 1240px;
+margin-top: 0px;
+margin-right: 100px;
+margin-left: 100px;
+margin-bottom: 150px;
+
+}
+
+.text-content {
+    width: 855px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .section-six-title {
     font-weight: 500;
@@ -310,6 +382,9 @@ font-weight: 400;
         text-align: center;
         color: #fbfbfb;
         opacity: 0.4;
+        width: 571px;
+        margin-right: auto;
+        margin-left: auto;
 }
 
 .section-six-list {}
@@ -320,6 +395,9 @@ font-weight: 400;
 
 .section-six-container {
     background-color: #fbfbfb;
+    width: 392px;
+    border-radius: 24px;
+    padding: 32px 36px;
 }
 
 .section-six-container-title {
@@ -338,6 +416,13 @@ font-weight: 400;
         letter-spacing: -0.02em;
         text-align: center;
         color: rgba(4, 3, 6, 0.4);
+        width: 320px;
+        
+
+}
+
+
+.person-img {
 }
 
 /* #endregion */
@@ -348,14 +433,26 @@ font-weight: 400;
 
 /* #region Footer */
 
-.footer {}
+.footer {
+    background: #1b414b;
+    border-radius: 24px 24px 0 0;
+        width: 1390px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        
+}
 
 .footer-logo {font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.03em;
     color: #fbfbfb;}
 
-.footer-nav {}
+.footer-nav {
+}
 
 .footer-nav-list {}
 
@@ -368,7 +465,7 @@ font-weight: 400;
         text-transform: uppercase;
         text-align: center;
         color: #fbfbfb;
-        background-color: rgba(251, 251, 251, 0.3);
+        background-: rgba(251, 251, 251, 0.3);
 }
 
 .footer-addres {}
@@ -386,6 +483,9 @@ font-weight: 400;
         letter-spacing: -0.02em;
         text-align: center;
         color: #fbfbfb;
+        width: 699px;
+        margin-right: auto;
+        margin-left: auto;
 }
 
 .footer-text {
@@ -395,6 +495,8 @@ font-weight: 400;
         letter-spacing: 0.03em;
         text-align: center;
         color: rgba(251, 251, 251, 0.4);
+        width: 298px;
+        margin-right: auto;margin-left: auto;
 }
 
 /* #endregion */
