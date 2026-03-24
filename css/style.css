@@ -51,6 +51,8 @@ margin: 0;
             margin-right: auto;
             margin-left: auto;
             background-color: #fbfbfb;
+            padding-left: 30px;
+            padding-right: 30px;
 }
 
 
@@ -70,7 +72,7 @@ font-family: var(--font-family);
     font-size: 20px;
     letter-spacing: -0.03em;
     color: #1b414b;
-    margin: 12px 0px 12px 30px;
+    margin: 12px 0px 12px 0px;
     
 }
 
@@ -115,6 +117,8 @@ gap: 4px;
 .header-addres-list {
 display: flex;
 gap: 8px;
+align-items: center;
+
 }
 
 .header-addres-list-item {
@@ -125,6 +129,16 @@ gap: 8px;
 .header-addres-list-item-link {
 
 }
+
+.header-icon {
+    fill: #1b414b;
+}
+
+.header-icon:hover,
+.header-icon:focus {
+    fill: #062730;
+}
+
 
 /* #endregion */
 
@@ -801,5 +815,15 @@ font-weight: 400;
     color: rgba(251, 251, 251, 0.4);
     
 }
+
+.footer-icon {
+    fill: #fbfbfb;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+fill: rgba(251, 251, 251, 0.8);
+}
+
 
 /* #endregion */
