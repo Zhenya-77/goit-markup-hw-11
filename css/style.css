@@ -828,3 +828,132 @@ fill: rgba(251, 251, 251, 0.8);
 
 
 /* #endregion */
+
+
+
+/* #region Modal */
+
+.modal-overley {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0;
+    pointer-events: none; */
+}
+
+.modal {
+    width: 375px;
+    max-height: 100%;
+    background: #0e1823;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    left: 20px;
+    width: 335px;
+    background-color: #fbfbfb;
+border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.modal-logo {
+    margin: 0;
+    font-family: var(--font-family);
+     font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.03em;
+        color: #1b414b;
+}
+
+.modal-header-btn {
+    margin: 0;
+    border: none;
+        background: none;
+        padding: 0;
+}
+
+.modal-header-icon {
+    fill: #055545;
+    margin: 0;
+}
+
+.modal-nav {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 259px;
+    margin-bottom: auto;
+}
+
+.modal-nav-list {
+    display: flex;
+        flex-direction: column;
+        gap: 4px;
+        
+
+}
+
+.modal-nav-item {}
+
+.modal-nav-link {
+    background: rgba(27, 65, 75, 0.5);
+    border-radius: 8px;
+        width: 91px;
+        height: 40px;
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fbfbfb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+}
+
+.modal-nav-link:hover {
+    background: #1b414b;
+}
+
+
+.modal-nav-icon {}
+
+.modal-social-list {
+    display: flex;
+    margin-top: 361px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+
+.modal-link {}
+
+.modal-icon {
+    fill: #fbfbfb;
+}
+
+.modal-icon:hover {
+    fill: rgba(251, 251, 251, 0.8);
+}
+
+
+/* #endregion */
