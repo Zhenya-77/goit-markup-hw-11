@@ -584,6 +584,7 @@ justify-content: flex-start;
 .input-name:focus {
     border: 1px solid rgba(251, 251, 251, 0.5);
     color: #fbfbfb;
+    border-color: transparent;
 }
 
 .form-btn {
