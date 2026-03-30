@@ -485,7 +485,8 @@ max-width: 385px;
 }
 
 
-.section-third-card > .card-item-box:not(:first-child) {
+.card-2,
+.card-3 {
     display: none;
 }
 
@@ -495,7 +496,7 @@ max-width: 385px;
 
 .card-item-box {
     border-radius: 24px;
-        width: 334px;
+        max-width: 334px;
         background-color: #fbfbfb;
         padding: 16px 16px 32px 16px;
 }
@@ -602,10 +603,12 @@ font-family: var(--font-family);
     margin-bottom: 50px;
 }
 
-.section-third-card > .card-item-box:not(:last-child) {
-    display: flex;
-    flex-direction: column;
-    width: 336px;
+.card-item-box {
+    max-width: 336px;
+}
+
+.card-2 {
+    display: block;
 }
 
 .section-third-h3 {
@@ -654,11 +657,51 @@ padding: 16px 40px;
     gap: 25px;
 }
 
-.section-third-card > .card-item-box {
-    display: flex;
-    width: 377px;
+.card-item-box {
+    max-width: 377px;
+}
+
+.card-3 {
+    display: block;
 }
  
+.section-third-h3 {
+
+    max-width: 313px;
+}
+
+.section-third-info-list {
+    max-width: 313px;
+}
+
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    
+.section-third .container {
+        max-width: 1440px;
+        padding: 250px 100px 150px 100px;
+    }
+
+.section-third-card {
+    max-width: 1240px;
+    gap: 32px;
+}
+
+.card-item-box {
+    max-width: 392px;
+}
+
+.section-third-h3 {
+
+    max-width: 328px;
+}
+
+.section-third-info-list {
+    max-width: 328px;
+}
 
 }
 
