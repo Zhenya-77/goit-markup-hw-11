@@ -880,11 +880,164 @@ max-height: 424px;
 
 /* #region Section5 */
 
+.section-fifth .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px 80px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-title {
+    max-width: 222px;
+    font-family: var(--font-family);
+     font-weight: 500;
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #fbfbfb;
+        margin: 0;
+}
+
+.contact-form {
+display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form .form-btn {
+    margin-top: 22px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+        padding: 14px 44px;
+        width: 122px;
+        height: 46px;
+        background-color: #1b414b;
+        color: #fbfbfb;
+        border: none;
+        font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.28571;
+            letter-spacing: -0.02em;
+}
+
+.form-btn:hover {
+    background-color: #fbfbfb;
+    color: #1b414b;
+}
+
+.input-name {
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 12px;
+    padding: 14px 18px 14px 18px;
+    width: 335px;
+    background-color: transparent;
+    color: #fbfbfb;
+
+}
+
+
+.input-name::placeholder {
+    color: rgba(251, 251, 251, 0.4);
+}
+
+.input-name:focus {
+    border: 1px solid rgba(251, 251, 251, 0.5);
+    color: #fbfbfb;
+    border-color: transparent;
+}
+
+.section-fifth img {
+    border-radius: 24px;
+    width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    
+.section-fifth .container {
+        max-width: 768px;
+        padding: 0 32px 150px 32px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+.form-block {
+    gap: 50px;
+}
+
+.form-title {
+    max-width: 381px;
+    font-size: 48px;
+}
+
+.contact-form .form-btn {
+    width: 194px;
+    height: 56px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+    padding: 18px 75px;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.input-name {
+width: 472px;
+padding: 18px 18px 18px 18px;
+}
+
+.section-fifth img {
+    width: 704px;
+    height: 534px;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+.section-fifth .container {
+    max-width: 1280px;
+    padding: 0 50px 150px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.section-fifth img {
+    width: 658px;
+    height: 536px;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+.section-fifth .container {
+        max-width: 1440px;
+    }
+
+.section-fifth img {
+    width: 768px;
+}
+
+}
+
 /* #endregion */
 
 /* #region Section6 */
 
 /* #endregion */
+
+
+
+
 
 /* #endregion */
 
