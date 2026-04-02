@@ -179,10 +179,16 @@ img {
 /* #region Section1 */
 
 .section-first {
-background-image: url(/images/image-1.jpg);
+background-image: url(/images/bg-img.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+}
+
+@media screen and (min-width: 375px) and (min-resolution: 192dpi) {
+    .section-first {
+        background-image: url(/images/bg-img@2x.jpg);
+    }
 }
 
 .container {
@@ -359,7 +365,8 @@ font-family: var(--font-family);
 .section-second-img {
     position: absolute;
     top: 380px;
-    max-width: 335px;
+    right: 20px;
+    border-radius: 24px;
 }
 
 
@@ -371,7 +378,7 @@ font-family: var(--font-family);
 
         .container-info {
             max-width: 704px;
-            padding: 50px 136px 244px 32px;
+            padding: 50px 136px 450px 32px;
             gap: 50px;
         }
 
@@ -391,7 +398,7 @@ line-height: 1.15;
 max-width: 385px;
          }
 .section-second-img {
-    max-width: 704px;
+    right: 32px;
     top: 473px;
 }
 
@@ -425,7 +432,7 @@ max-width: 385px;
   }
 
 .section-second-img {
-    max-width: 1180px;
+    right: 50px;
     top: 360px;
 }
 
@@ -455,7 +462,7 @@ max-width: 385px;
  }
 
  .section-second-img {
-     max-width: 1340px;
+    right: 50px;
      top: 338px;
  }
 
@@ -1416,8 +1423,8 @@ font-family: var(--font-family);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity: 0;
-    pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
