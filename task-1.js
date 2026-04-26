@@ -1325,3 +1325,74 @@ headerBtnModal.addEventListener("click", () => {
 modalBtn.addEventListener("click", () => {
   modalOverlay.classList.toggle("is-hidden");
 });
+
+const form = document.querySelector(".contact-form");
+const LOCAL_STORAGE_KEY = "feedback-form-state";
+
+const formData = {
+  name: "",
+  email: "",
+  phoneNumber: "",
+  comment: "",
+};
+
+const savedData = localStorage.getItem(LOCAL_STORAGE_KEY);
+
+if (savedData) {
+  const parsedData = JSON.parse(savedData);
+
+  formData.name = parsedData.name || "";
+  formData.email = parsedData.email || "";
+  formData.phoneNumber = parsedData.phoneNumber || "";
+  formData.comment = parsedData.comment || "";
+
+  form.elements.fullName.value = formData.name;
+  form.elements.email.value = formData.email;
+  form.elements.phone.value = formData.phoneNumber;
+  form.elements.comment.value = formData.comment;
+}
+
+form.addEventListener("input", handleInput);
+
+function handleInput(event) {
+  const { name, value } = event.target;
+
+  if (name === "fullName") {
+    formData.name = value;
+  } else if (name === "email") {
+    formData.email = value;
+  } else if (name === "phone") {
+    formData.phoneNumber = value;
+  } else if (name === "comment") {
+    formData.comment = value;
+  }
+
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(formData));
+}
+
+form.addEventListener("submit", hendleSubmit);
+
+function hendleSubmit(event) {
+  event.preventDefault();
+
+  const name = form.elements.fullName.value.trim();
+  const email = form.elements.email.value.trim();
+  const phoneNumber = form.elements.phone.value.trim();
+  const comment = form.elements.comment.value.trim();
+
+  if (!email || !comment || !name || !phoneNumber) {
+    alert("Fill please all fields");
+    return;
+  }
+
+  console.log(formData);
+
+  localStorage.removeItem(LOCAL_STORAGE_KEY);
+
+  formData.name = "";
+  formData.email = "";
+  formData.phoneNumber = "";
+  formData.comment = "";
+
+  form.reset();
+}
